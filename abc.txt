@@ -4,12 +4,12 @@ pipeline{
 		stage('build'){
 			steps{
 				echo "hello"
-			}post{
-			success{
-				echo "success"
 			}
 		}
+	}
+	post{
+		success{
+			echo "success"
 		}
-		
 	}
 }
